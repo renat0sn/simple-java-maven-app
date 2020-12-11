@@ -49,7 +49,7 @@ public class Calculadora
 			num2 = input1.nextInt();
 			
 			if ( opcao == 1 ) {
-				int operacao = c.soma(num1, num2);
+				int operacao = c.som(num1, num2);
                 System.out.printf("\nO resultado da soma é: %d\n", operacao);  
                 break;  
             }  
