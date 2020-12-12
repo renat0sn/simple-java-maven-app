@@ -30,13 +30,59 @@ public class CalculadoraTest
     }
 
     @Test
-    public void testCalculadoraMain()
+    public void testSoma()
     {
-        Calculadora.main(null);
+		System.out.println("Soma:");
+        Calculadora c = new Calculadora();
+		int a = 10;
+		int b = 5;
+		int result = c.som(a,b);
         try {
-            assertEquals("Hello World!" + System.getProperty("line.separator"), outContent.toString());
+			assertEquals(10, result);
         } catch (AssertionError e) {
-            fail("\"message\" is not \"Hello World!\"");
+            fail("Resultados diferentes");
+        }
+    }
+    @Test
+    public void testSub()
+    {
+		System.out.println("Subtração:");
+        Calculadora c = new Calculadora();
+		int a = 10;
+		int b = 5;
+		int result = c.sub(a,b);
+        try {
+			assertEquals(5, result);
+        } catch (AssertionError e) {
+            fail("Resultados diferentes");
+        }
+    }
+    @Test
+    public void testMult()
+    {
+		System.out.println("Multiplicação:");
+        Calculadora c = new Calculadora();
+		int a = 10;
+		int b = 5;
+		int result = c.mult(a,b);
+        try {
+			assertEquals(50, result);
+        } catch (AssertionError e) {
+            fail("Resultados diferentes");
+        }
+    }
+    @Test
+    public void testDiv()
+    {
+		System.out.println("Divisão:");
+        Calculadora c = new Calculadora();
+		int a = 10;
+		int b = 5;
+		int result = c.div(a,b);
+        try {
+			assertEquals(2, result);
+        } catch (AssertionError e) {
+            fail("Resultados diferentes");
         }
     }
 
