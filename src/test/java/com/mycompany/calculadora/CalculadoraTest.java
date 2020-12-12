@@ -38,7 +38,7 @@ public class CalculadoraTest
 		int b = 5;
 		int result = c.som(a,b);
         try {
-			assertEquals(10, result);
+			assertEquals(15, result);
         } catch (AssertionError e) {
             fail("Resultados diferentes");
         }
