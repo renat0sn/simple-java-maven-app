@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package com.mycompany.calculadora;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 /**
  * Unit test for simple App.
  */
-public class AppTest
+public class CalculadoraTest
 {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
@@ -21,18 +21,18 @@ public class AppTest
     }
 
     @Test
-    public void testAppConstructor() {
+    public void testCalculadoraConstructor() {
         try {
-            new App();
+            new Calculadora();
         } catch (Exception e) {
             fail("Construction failed.");
         }
     }
 
     @Test
-    public void testAppMain()
+    public void testCalculadoraMain()
     {
-        App.main(null);
+        Calculadora.main(null);
         try {
             assertEquals("Hello World!" + System.getProperty("line.separator"), outContent.toString());
         } catch (AssertionError e) {
