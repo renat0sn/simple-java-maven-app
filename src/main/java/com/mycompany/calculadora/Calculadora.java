@@ -1,4 +1,4 @@
-
+package com.mycompany.calculadora;
 import java.util.Scanner;
 
 /**
