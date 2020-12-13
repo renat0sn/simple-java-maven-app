@@ -28,19 +28,19 @@ public class Calculadora
         int num1 = Integer.parseInt(args[1]);  
         int num2 = Integer.parseInt(args[2]);  
 			
-		if ( opcao == "Soma" ) {
+		if ( opcao.equals("Soma")) {
 			int operacao = c.som(num1, num2);
             System.out.printf("\nO resultado da soma é: %d\n", operacao);
         }  
-        else if (opcao == "Subtração") { 
+        else if (opcao.equals("Subtração")) { 
 			int operacao = c.sub(num1, num2);
 			System.out.printf("\nO resultado da subtração é: %d\n", operacao);
 		}  
-		else if (opcao == "Multiplicação") {
+		else if (opcao.equals("Multiplicação")) {
 			int operacao = c.mult(num1, num2); 
 			System.out.printf("\nO resultado da multiplicação é: %d\n", operacao); 
 		}  
-		else if (opcao == "Divisão") {  
+		else if (opcao.equals("Divisão")) {  
 			int operacao = c.div(num1, num2);  
 			System.out.printf("\nO resultado da divisão é: %d\n", operacao);
 		}
