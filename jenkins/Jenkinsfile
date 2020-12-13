@@ -42,7 +42,7 @@ pipeline {
                     val1 = userInput.Valor1?:''
                     val2 = userInput.Valor2?:''
 		}
-                sh './jenkins/scripts/deliver.sh 32'
+                sh './jenkins/scripts/deliver.sh 1 20 30'
             }
         }
     }
