@@ -41,8 +41,9 @@ pipeline {
                     opc = userInput.Config?:''
                     val1 = userInput.Valor1?:''
                     val2 = userInput.Valor2?:''
-		}
 		echo '${opc}'
+		}
+		
                 sh './jenkins/scripts/deliver.sh 1 20 30'
             }
         }
