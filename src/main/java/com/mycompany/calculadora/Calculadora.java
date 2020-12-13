@@ -27,7 +27,11 @@ public class Calculadora
         String opcao = args[0];  
         int num1 = Integer.parseInt(args[1]);  
         int num2 = Integer.parseInt(args[2]);  
-			
+		
+		System.out.println("\nEntradas do usuário:");
+		System.out.println("Valor 1: %d", num1);
+		System.out.println("Operação: %s", opcao);
+		System.out.println("Valor 2: %d", num2);
 		if ( opcao.equals("Soma")) {
 			int operacao = c.som(num1, num2);
             System.out.printf("\nO resultado da soma é: %d\n", operacao);
