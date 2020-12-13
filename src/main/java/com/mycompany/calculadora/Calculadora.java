@@ -24,7 +24,7 @@ public class Calculadora
     public static void main(String[] args) {
         Calculadora c = new Calculadora();  
         //declarando as varíaveis  
-        int opcao = args[0];  
+        String opcao = args[0];  
         int num1 = Integer.parseInt(args[1]);  
         int num2 = Integer.parseInt(args[2]);  
 			
@@ -32,7 +32,7 @@ public class Calculadora
 			int operacao = c.som(num1, num2);
             System.out.printf("\nO resultado da soma é: %d\n", operacao);
         }  
-           else if (opcao == "Subtração") { 
+        else if (opcao == "Subtração") { 
 			int operacao = c.sub(num1, num2);
 			System.out.printf("\nO resultado da subtração é: %d\n", operacao);
 		}  
