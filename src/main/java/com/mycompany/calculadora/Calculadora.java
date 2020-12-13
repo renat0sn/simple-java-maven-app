@@ -24,8 +24,6 @@ public class Calculadora
     public static void main(String[] args) {
         Calculadora c = new Calculadora();  
           System.out.printf(args[0]);
-		  System.out.printf(args[1]);
-		  System.out.printf(args[2]);
     }
 
 }
