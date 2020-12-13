@@ -23,27 +23,24 @@ public class Calculadora
 
     public static void main(String[] args) {
         Calculadora c = new Calculadora();  
-          System.out.printf(args[0]);
-		  System.out.printf(args[1]);
-		  System.out.printf(args[2]);
         //declarando as varíaveis  
-        int opcao = Integer.parseInt(args[0]);  
+        int opcao = args[0];  
         int num1 = Integer.parseInt(args[1]);  
         int num2 = Integer.parseInt(args[2]);  
 			
-		if ( opcao == 1 ) {
+		if ( opcao == "Soma" ) {
 			int operacao = c.som(num1, num2);
             System.out.printf("\nO resultado da soma é: %d\n", operacao);
         }  
-           else if (opcao == 2) { 
+           else if (opcao == "Subtração") { 
 			int operacao = c.sub(num1, num2);
 			System.out.printf("\nO resultado da subtração é: %d\n", operacao);
 		}  
-		else if (opcao == 3) {
+		else if (opcao == "Multiplicação") {
 			int operacao = c.mult(num1, num2); 
 			System.out.printf("\nO resultado da multiplicação é: %d\n", operacao); 
 		}  
-		else if (opcao == 4) {  
+		else if (opcao == "Divisão") {  
 			int operacao = c.div(num1, num2);  
 			System.out.printf("\nO resultado da divisão é: %d\n", operacao);
 		}
