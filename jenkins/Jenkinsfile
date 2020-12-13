@@ -23,7 +23,26 @@ pipeline {
 	}
 	stage('Deliver') {
             steps {
-                sh 'jenkins/scripts/deliver.sh'
+		script {
+                    def opc
+                    def val1
+                    def val2
+
+                    def userInput = input(
+                            id: 'userInput', message: 'Calculadora',
+                            parameters: [
+                                    string(description: 'Operação',
+                                            name: 'Config'),
+                                    string(description: 'Valor 1',
+                                            name: 'Valor1'),
+                                    string(description: 'Valor 2',
+                                            name: 'Valor2'),
+                            ])
+                    opc = userInput.Config?:''
+                    val1 = userInput.Valor1?:''
+                    val2 = userInput.Valor2?:''
+		}
+                sh 'jenkins/scripts/deliver.sh ${opc} ${val1} ${val2}'
             }
         }
     }
